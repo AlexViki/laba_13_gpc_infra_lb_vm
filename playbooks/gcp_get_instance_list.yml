@@ -1,0 +1,10 @@
+---
+- name: "Get list of instances"
+  hosts: "localhost"  
+  tasks:
+  - name: "Get instance"
+    shell: gcloud compute instances list
+    register: mypass
+  - name: Print the generated password
+    debug:
+    msg: "The password is {{ mypass }}"
