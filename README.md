@@ -1,1 +1,1 @@
-# laba_13_gpc_infra_lb_vm
+# laba 13 gpc infra, lb, instance group, template
