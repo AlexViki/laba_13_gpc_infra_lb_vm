@@ -1,11 +1,11 @@
 ---
 - name: "Create a virtual machine template"
   shell: >
-  gcloud compute instance-templates create python-app 
-  --boot-disk-size=10GB 
-  --image-family ubuntu-1804-lts 
-  --image-project=ubuntu-os-cloud 
-  --tags http-server 
-  --machine-type=f1-micro 
-  --restart-on-failure 
-  --metadata startup-script='wget -O - https://github.com/AlexViki/laba_13_gpc_infra_lb_vm/blob/master/scripts/run_app.sh | bash'
+    gcloud compute instance-templates create python-app 
+    --boot-disk-size=10GB 
+    --image-family ubuntu-1804-lts 
+    --image-project=ubuntu-os-cloud 
+    --tags http-server 
+    --machine-type=f1-micro 
+    --restart-on-failure 
+    --metadata startup-script='wget -O - https://github.com/AlexViki/laba_13_gpc_infra_lb_vm/blob/master/scripts/run_app.sh | bash'

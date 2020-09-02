@@ -4,7 +4,8 @@
   tasks:
   - name: "Get instance"
     shell: gcloud compute instances list
+#   command: gcloud compute instances list
     register: list
-  - name: Print the generated password
+  - name: Print the all instances
     debug:
-    msg: "The password is {{ list }}"
+    msg: "All instance: {{ list }}"
