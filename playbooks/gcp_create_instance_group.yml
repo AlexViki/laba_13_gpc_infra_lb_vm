@@ -1,0 +1,5 @@
+---
+- name: "Create a instance group"
+  hosts: local
+  roles: 
+  - role: "roles/gcp_create_instance_groups"

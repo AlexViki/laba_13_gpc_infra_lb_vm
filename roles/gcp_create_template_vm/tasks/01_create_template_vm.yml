@@ -1,7 +1,7 @@
 ---
 - name: "Create a virtual machine template"
   shell: >
-    gcloud compute instance-templates create python-app 
+    gcloud compute instance-templates create {{ name_template }}
     --boot-disk-size=10GB 
     --image-family ubuntu-1804-lts 
     --image-project=ubuntu-os-cloud 

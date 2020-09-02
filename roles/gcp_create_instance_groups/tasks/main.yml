@@ -1,0 +1,4 @@
+---
+# tasks file for roles/gcp_create_instance_groups
+- name: "Create a instance group"
+  import_tasks: "01_create_instance_group.yml"

@@ -20,3 +20,6 @@ Update the package list and install the Cloud SDK
 ### View these properties at any other time using:
 ```gcloud config list```
 ```gcloud info```
+
+### For checking syntax in Ansible, use: 
+```ansible-playbook your.yml --check```

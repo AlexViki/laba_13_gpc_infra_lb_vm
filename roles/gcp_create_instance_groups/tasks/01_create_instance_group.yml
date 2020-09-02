@@ -1,0 +1,7 @@
+---
+- name: "Create a instance group"
+  shell: >
+    gcloud compute instance-groups managed create {{ name_instance_groups }} \
+    --template={{ name_template }} \
+    --size 1 \
+    --region={{ name_region }}

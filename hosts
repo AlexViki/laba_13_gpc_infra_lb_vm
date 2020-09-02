@@ -1,1 +1,7 @@
-localhost
+[local]
+127.0.0.1                   ansible_host="localhost"        ansible_connection="local"
+
+[all:vars]
+name_template           = python-app
+name_instance_groups    = simple-app
+name_region             = europe-west1

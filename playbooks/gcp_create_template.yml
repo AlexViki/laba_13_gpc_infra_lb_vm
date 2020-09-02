@@ -1,5 +1,5 @@
 ---
 - name: "Create a virtual machine template"
-  hosts: localhost
+  hosts: local
   roles: 
   - role: "roles/gcp_create_template_vm"
