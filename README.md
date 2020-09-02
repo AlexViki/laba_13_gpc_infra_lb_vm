@@ -23,3 +23,7 @@ Update the package list and install the Cloud SDK
 
 ### For checking syntax in Ansible, use: 
 ```ansible-playbook your.yml --check```
+
+### Check instance group
+```gcloud compute instance-groups managed list```
+```gcloud compute instance-groups managed describe simple-app --region europe-west1```

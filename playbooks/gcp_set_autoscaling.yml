@@ -1,0 +1,5 @@
+---
+    - name: "Set autoscaling"
+      hosts: localhost
+      roles: 
+        - role: "roles/gcp_set_autoscaling_instance_groups"

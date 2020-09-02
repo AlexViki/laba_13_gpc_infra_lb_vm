@@ -1,0 +1,10 @@
+---
+    - name: "Set autoscaling instance groups"
+      shell: >
+        gcloud compute instance-groups managed set-autoscaling {{ name_instance_groups }} \
+        --max-num-replicas=5 \
+        --min-num-replicas=1 \
+        --scale-based-on-cpu \
+        --target-cpu-utilization 0.8 \
+        --cool-down-period 240 \
+        --region={{ name_region }}
