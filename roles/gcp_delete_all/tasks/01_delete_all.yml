@@ -1,0 +1,21 @@
+---
+- name: "Del all resource"
+  shell: >
+    gcloud compute backend-services remove-backend {{ name_instance_groups }} \
+    --instance-group={{ name_instance_groups }} \
+    --instance-group-region {{ name_region }} \
+    --global
+  shell: >
+    gcloud compute forwarding-rules delete {{ name_forwarding_rule }} --global
+  shell: >
+    gcloud compute target-http-proxies delete {{ name_proxy }}
+  shell: >
+    gcloud compute url-maps delete {{ name_lb }}
+  shell: >
+    gcloud compute backend-services delete {{ name_instance_groups }} --global
+  shell: >
+    gcloud compute http-health-checks delete {{ name_app }}
+  shell: >
+    gcloud compute instance-groups managed delete {{ {{ name_forwarding_rule }} }} --region {{ name_region }}
+  shell: >
+    gcloud compute instance-templates delete {{ name_template }}

@@ -1,0 +1,5 @@
+---
+    - name: "Del all resource"
+      hosts: localhost
+      roles: 
+        - role: "roles/gcp_delete_all"

@@ -27,3 +27,5 @@ Update the package list and install the Cloud SDK
 ### Check instance group
 ```gcloud compute instance-groups managed list```
 ```gcloud compute instance-groups managed describe simple-app --region europe-west1```
+
+while true; do (curl http://ip_lb &); sleep 5; done
