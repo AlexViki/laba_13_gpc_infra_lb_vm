@@ -1,0 +1,9 @@
+---
+- name: "Add rules to LB"
+  shell: >
+    gcloud compute backend-services add-backend {{ name_instance_groups }} \
+    --instance-group {{ name_instance_groups }} \
+    --balancing-mode UTILIZATION \
+    --max-utilization 0.6 \
+    --instance-group-region {{ name_region }} \
+    --global

@@ -1,0 +1,6 @@
+---
+- name: "Create backend for using LB"
+  shell: >
+    gcloud compute backend-services create {{ name_instance_groups }} \
+    --http-health-checks={{ name_app }} \
+    --global

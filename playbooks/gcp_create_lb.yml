@@ -1,0 +1,5 @@
+---
+- name: "Create LB"
+  hosts: local
+  roles: 
+  - role: "roles/gcp_create_lb"

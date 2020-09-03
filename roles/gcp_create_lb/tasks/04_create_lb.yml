@@ -1,0 +1,4 @@
+---
+- name: "Create LB"
+  shell: >
+    gcloud compute url-maps create {{ name_lb }} --default-service {{ name_instance_groups }}

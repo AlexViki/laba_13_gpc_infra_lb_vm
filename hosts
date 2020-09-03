@@ -5,3 +5,7 @@
 name_template           = template-python-app
 name_instance_groups    = ig-simple-app
 name_region             = europe-west1
+name_app                = pyapp
+name_lb                 = simpleapp-lb
+name_proxy              = simpleapp-proxy
+name_forwarding_rule    = simpleapp-http-forwarding

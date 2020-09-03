@@ -1,0 +1,10 @@
+---
+# tasks file for roles/gcp_set_parameters_lb
+- name: "Create LB"
+  import_tasks: "01_set_service_point_lb.yml"
+  import_tasks: "02_create_healthcheck.yml"
+  import_tasks: "03_create_backend.yml"
+  import_tasks: "04_create_lb.yml"
+  import_tasks: "05_connect_rule_lb.yml"
+  import_tasks: "06_create_rules.yml"
+  import_tasks: "07_add_rules_to_lb.yml"

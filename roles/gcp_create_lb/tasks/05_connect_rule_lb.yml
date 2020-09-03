@@ -1,0 +1,4 @@
+---
+- name: "Connect rule LB.yml"
+  shell: >
+    gcloud compute target-http-proxies create {{ name_proxy }} --url-map {{ name_lb }}

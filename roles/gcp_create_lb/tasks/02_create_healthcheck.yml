@@ -1,0 +1,7 @@
+---
+- name: "Create healthcheck"
+  shell: >
+    gcloud compute http-health-checks create {{ name_app }} \
+    --check-interval=5s \
+    --timeout 5 \
+    --request-path /health

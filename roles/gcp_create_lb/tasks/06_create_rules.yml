@@ -1,0 +1,7 @@
+---
+- name: "Add traffic processing rules"
+  shell: >
+    gcloud compute forwarding-rules create {{ name_forwarding_rule }} \
+    --global \
+    --ports 80 \
+    --target-http-proxy {{ name_proxy }}

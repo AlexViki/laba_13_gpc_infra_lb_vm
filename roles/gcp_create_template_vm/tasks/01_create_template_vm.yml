@@ -8,4 +8,4 @@
     --tags http-server 
     --machine-type=f1-micro 
     --restart-on-failure 
-    --metadata startup-script='wget -O - https://github.com/AlexViki/laba_13_gpc_infra_lb_vm/blob/master/scripts/run_app.sh | bash'
+    --metadata startup-script='wget -O - https://raw.githubusercontent.com/AlexViki/laba_13_gpc_infra_lb_vm/master/scripts/run_app.sh | bash'

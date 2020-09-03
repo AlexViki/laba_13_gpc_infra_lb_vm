@@ -1,0 +1,6 @@
+---
+- name: "Set service point in LB"
+  shell: >
+    gcloud compute instance-groups managed set-named-ports {{ name_instance_groups }} \
+    --named-ports http:80 \
+    --region {{ name_region  }}
